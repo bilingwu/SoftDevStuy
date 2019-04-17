@@ -1,0 +1,69 @@
+.page{
+    width: 100%;
+    overflow: hidden;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header .key {
+  margin: auto;
+}
+
+header .key {
+  margin-bottom: 30px;
+  border: 1px solid black;
+  width: 265px;
+}
+
+header .key h2 {
+  text-align: center;
+}
+
+header .key div {
+  font: 15px sans-serif;
+  color: black;
+  margin: 1px;
+  text-align: left;
+  padding: 3px;
+  white-space: nowrap;
+}
+
+header .key .allocated,
+header .key .unallocated {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+header.democrat .key .allocated {
+  background-color: blue;
+}
+header.democrat .unallocated {
+  background-color: lightblue;
+}
+header.republican .allocated {
+  background-color: red;
+}
+header.republican .unallocated {
+  background-color: lightpink;
+}
+
+.count {
+  text-align: center;
+}
+
+.democrat.chart div {
+  margin-left: auto;
+}
+
+.republican.chart {
+  text-align: right;
+}
+
+.chart div {
+  padding: 20px;
+  color: white;
+  font-weight: 600;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <!-- Source of the Map API -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+  <!-- Script of the Map API -->
+  <script>
+    var map;
+    
+    var center = { lat: {{coord.lat}}, lng: {{coord.lng}} };
+
+    function initialize(){
+    map = new google.maps.Map(document.getElementById('map-canvas'), {
+    zoom: 8,
+    center: center
+    });
+    }
+
+    window.addEventListener('load',initialize);
+  </script>
+
+  <head>
+    <title>Qwiki Results</title>
+    <link rel = "stylesheet" type = "text/css" href = "static/style.css">
+  </head>
+  
+  <body>
+    <!-- Displays the Map -->
+    <div id="map-canvas"></div>
+  </body>
+  <footer>
+      <h3>Qwiki Facts:</h3>
+      <p>{{info}}
+	<a href="https://en.wikipedia.org/wiki/{{location}}">Read More</a>
+      </p>
+      <a href="/" id="return">Search Up Another Location</a>
+  </footer>
+</html>
+

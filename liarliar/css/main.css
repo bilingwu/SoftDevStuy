@@ -1,0 +1,66 @@
+nav {
+    background-color: #9575cd;
+}
+
+#trump a {
+    background-color: #ef5350;
+}
+
+#trump.active a {
+    background-color: #d32f2f;
+}
+
+#cruz a {
+    background-color: #ef5350;
+}
+
+#cruz.active a {
+    background-color: #d32f2f;
+}
+
+#clinton a {
+    background-color: #1e88e5;
+}
+
+#clinton.active a {
+    background-color: #1976d2;
+}
+
+#sanders a {
+    background-color: #1e88e5;
+}
+
+#sanders.active a {
+    background-color: #1976d2;
+}
+
+.output{
+    width: 100%;
+    overflow: hidden;
+}
+
+#lies{
+    width: 50%; 
+    float: left;
+}
+
+#polls{
+    margin-left: 50%;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: 'Arial';
+    font-size: 13px;
+}
+.tick {
+    stroke-dasharray: 1, 2;
+}
+.bar {
+    fill: FireBrick;
+}
+

@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Liar Liar</title>
+    
+    <!-- Materialize CSS -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <!-- End Materialize -->
+
+    <!-- JQuery Source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+	<a class="brand-logo">&nbsp;&nbsp;Liar Liar</a>
+	<ul class="right">
+          <li id="trump" class="active"><a>Trump</a></li>
+          <li id="cruz"><a>Cruz</a></li>
+	  <li id="clinton"><a>Clinton</a></li>
+          <li id="sanders"><a>Sanders</a></li>
+	</ul>
+      </div>
+    </nav>
+
+    <div class="output">
+      <!-- 3 line graph of the number and intensity of lies in a 5 month increment-->
+      <div id="lies">
+	<h2>Lies Graph</h2>
+	<svg id="liesGraph" width="1000" height="500"></svg>
+      </div>
+      <!--polling data -->
+      <div id="polls">
+	<h2>Polls Graph</h2>
+	<svg id="pollGraph" width="1000" height="500"></svg>
+      </div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--<script src="data/republicanData.js"></script>-->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

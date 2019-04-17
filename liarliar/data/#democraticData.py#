@@ -1,0 +1,32 @@
+#import csv
+#f = open("democraticPollData2016.csv")
+#for row in csv.reader(f):
+#    print(row)
+#for row in csv.reader(f):
+#    newrow = [row[1], row[7], row[8]]
+#    print(newrow)
+
+democraticData = [
+    ['Start Date', 'Clinton', 'Sanders'],
+    ['2016-03', 51.4, 41.4],
+    ['2016-02', 50.3, 38.8],
+    ['2016-01', 52.3, 35.3],
+    ['2015-12', 55.6, 31.0],
+    ['2015-11', 55.6,31.2]
+]
+
+clintonData = {
+    {"x":"2015-nov", "y":"55.6"},
+    {"x":"2015-dec", "y":"55.6"},
+    {"x":"2016-jan", "y":"52.3"},
+    {"x":"2016-feb", "y":"50.3"},
+    {"x":"2016-mar", "y":"51.4"}
+}
+sandersData ={ 
+    {"x":"2015-nov", "y":"31.2"},
+    {"x":"2015-dec", "y":"31.0"},
+    {"x":"2016-jan", "y":"35.3"},
+    {"x":"2016-feb", "y":"38.8"},
+    {"x":"2016-mar", "y":"41.4"}
+}
+

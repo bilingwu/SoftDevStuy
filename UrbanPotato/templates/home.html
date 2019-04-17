@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <h1>Recent announcements</h1>
+  </div>
+</div>
+
+<!-- For each post:
+     index 0 title
+           1 body
+           2 ID
+           3 timestamp
+           4 author's first name
+           5 author's last name -->
+{% for post in posts %}
+  <div class="container">
+    <div class="row"><div class="col-md-8">
+      <h2>{{ post[0] }}</h2>
+      <small>Posted by {{ post[4] }} {{ post[5] }} at {{ post[3] }}</small><br>
+      <p class="lead">{{ post[1] }}</p><br>
+      <a class="btn btn-primary" href="{{ url_for('post', delete_comments = None, post_ID=post[2]) }}" role="button">Read more...</a><br>
+    </div></div>
+  </div>
+  <br>
+{% endfor %}
+
+<!--
+<div class="container" align="center">
+  <ul class="pager">
+    <li class="previous disabled"><a href="#">&larr; Newer</a></li>
+    <li class="next"><a href="/?count=25&after={{ posts|length }}">Older &rarr;</a></li>
+  </ul>
+</div>
+-->
+{% endblock %}
